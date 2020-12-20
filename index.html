@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="https://img.icons8.com/nolan/64/purchase-order.png"
+            type="image/x-icon"
+        />
+        <title>Order Page</title>
+
+        <link rel="stylesheet" href="reset.css" />
+        <link rel="stylesheet/less" type="text/css" href="style.less" />
+        <script
+            rel="preload"
+            as="script"
+            crossorigin="anonymous"
+            src="//cdn.jsdelivr.net/npm/less@3.13"
+        ></script>
+    </head>
+
+    <body>
+        <header>
+            <img class="logo" src="img/logo.jpg" alt="" style="border-radius: 50%; width: 90px" />
+        </header>
+
+        <div class="order">
+            <h1 id="header">Your order from Ms.Thanh Phương</h1>
+
+            <ul class="orderFoods">
+                <li class="orderFood">
+                    <span class="orderFood-nameFood">Bánh tráng muối </span>
+
+                    <span class="orderFood-quantityFood">
+                        <button class="btnNumber">-</button>
+                        <input
+                            type="text"
+                            value="1"
+                            style="width: 3rem; text-align: center; border: none"
+                        />
+                        <button class="btnNumber">+</button>
+                    </span>
+
+                    <span class="orderFood-priceFood">
+                        <span>10.000 VND</span>
+                        <button class="btnX">x</button>
+                    </span>
+                </li>
+
+                <li class="orderFood">
+                    <span class="orderFood-nameFood">Bánh tráng khô bò </span>
+
+                    <span class="orderFood-quantityFood">
+                        <button class="btnNumber">-</button>
+                        <input
+                            type="text"
+                            value="1"
+                            style="width: 3rem; text-align: center; border: none"
+                        />
+                        <button class="btnNumber">+</button>
+                    </span>
+
+                    <span class="orderFood-priceFood">
+                        <span>15.000 VND</span>
+                        <button id="btnX">x</button>
+                    </span>
+                </li>
+
+                <li class="orderFood">
+                    <span class="orderFood-nameFood">Bánh tráng lụi </span>
+
+                    <span class="orderFood-quantityFood">
+                        <button class="btnNumber">-</button>
+                        <input
+                            type="text"
+                            value="1"
+                            style="width: 3rem; text-align: center; border: none"
+                        />
+                        <button class="btnNumber">+</button>
+                    </span>
+
+                    <span class="orderFood-priceFood">
+                        <span>28.000 VND</span>
+                        <button id="btnX">x</button>
+                    </span>
+                </li>
+            </ul>
+
+            <button id="btnAdd">+ order</button>
+
+            <div class="orderFoodSummary">
+                <p>
+                    Subtotal
+                    <span id="subTotal" class="money">10.000 </span>
+                </p>
+
+                <p>
+                    Shipping
+                    <span id="shipping" class="money">5.000 </span>
+                </p>
+
+                <p>
+                    Total
+                    <span id="total" class="money">15.000 </span>
+                </p>
+            </div>
+
+            <button id="btnCheckout">Checkout</button>
+        </div>
+    </body>
+
+    <script src="helper.js"></script>
+    <script src="script.js"></script>
+</html>

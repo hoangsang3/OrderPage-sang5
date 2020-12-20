@@ -1,0 +1,108 @@
+html {
+    background: linear-gradient(135deg, #6bbfb2 30%, #e6ba5c 70%);
+}
+
+body {
+    width: 32rem;
+    // height: 75%;
+    min-height: 20rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+header {
+    border-radius: 1rem 1rem 0 0;
+    width: 100%;
+    flex-basis: 7rem;
+    background: orange;
+    text-align: center;
+    position: relative;
+    .logo {
+        position: relative;
+        top: 4rem;
+    }
+}
+
+.order {
+    #header {
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: 3rem;
+        font-size: 1.5rem;
+    }
+
+    padding: 1rem;
+    flex: 1;
+    background: white;
+    border-radius: 0 0 1rem 1rem;
+    padding-top: 4rem;
+
+    button {
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 0.4rem;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    .orderFood {
+        display: flex;
+        margin-bottom: 1rem;
+
+        .btnNumber {
+            padding: 0.5rem;
+            width: 25px;
+            height: 30px;
+            line-height: 10px;
+            font-size: 1.5rem;
+            margin-left: 1.4rem;
+        }
+
+        .orderFood-nameFood {
+            flex-basis: 10rem;
+        }
+
+        .orderFood-quantityFood {
+            flex-basis: 10rem;
+        }
+
+        .orderFood-priceFood {
+            margin-left: auto;
+
+            .btnX {
+                padding: 0.3rem;
+            }
+        }
+    }
+
+    #btnAdd {
+        border: 1px solid black;
+        width: 13rem;
+        background: white;
+        margin-top: 1rem;
+        margin-left: 16.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .orderFoodSummary {
+        padding: 1rem 1rem;
+        margin: 1rem 0;
+        margin-bottom: 2rem;
+        background: #f4f4f8;
+        border-radius: 0.5rem;
+        font-weight: 500;
+        line-height: 1.5rem;
+
+        .money {
+            float: right;
+        }
+    }
+
+    #btnCheckout {
+        width: 100%;
+        background-color: orange;
+        color: white;
+    }
+}
